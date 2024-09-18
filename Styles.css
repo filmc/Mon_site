@@ -1,0 +1,73 @@
+/* Style général du corps */
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #71b7e6, #9b59b6);
+}
+
+/* Style du conteneur de connexion */
+.login-container {
+    background-color: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    width: 350px;
+    text-align: center;
+}
+
+/* Style des formulaires et champs d'entrée */
+.login-form h2 {
+    margin-bottom: 20px;
+    color: #fff;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.input-box {
+    position: relative;
+    margin: 15px 0;
+}
+
+.input-box input {
+    width: 100%;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.1);
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 16px;
+    outline: none;
+}
+
+.input-box input::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.input-box button {
+    width: 100%;
+    padding: 10px;
+    background-color: #9b59b6;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.input-box button:hover {
+    background-color: #8e44ad;
+}
+
+/* Message d'erreur */
+#error-message {
+    color: red;
+    font-size: 14px;
+    margin-top: 10px;
+}
